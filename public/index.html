@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#001B22" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="shortcut icon" href="./Logo-Small-Light.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Study Notion</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGLTECJGHX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-FGLTECJGHX");
+    </script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="loaderdiv">
+        <div class="waviy">
+          <span style="--i: 1">S</span>
+          <span style="--i: 2">T</span>
+          <span style="--i: 3">U</span>
+          <span style="--i: 4">D</span>
+          <span style="--i: 5">Y</span>
+          <span> </span>
+          <span style="--i: 6">N</span>
+          <span style="--i: 7">O</span>
+          <span style="--i: 8">T</span>
+          <span style="--i: 9">I</span>
+          <span style="--i: 10">O</span>
+          <span style="--i: 11">N</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then((registration) => {
+              console.log("Service Worker registered with scope:", registration.scope);
+            })
+            .catch((error) => {
+              console.error("Service Worker registration failed:", error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
